@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+        }
+        #qrcode {
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Scan this QR Code</h2>
+
+    <div id="qrcode"></div>
+
+    <script>
+        // 🔗 Replace this URL with your video or image link
+        var url = "C:/Users/joshu/OneDrive/Desktop/QR/img/video.mp4";
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: url,
+            width: 200,
+            height: 200
+        });
+    </script>
+
+</body>
+</html>
